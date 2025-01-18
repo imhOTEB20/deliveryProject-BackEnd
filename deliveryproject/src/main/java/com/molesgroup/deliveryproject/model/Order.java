@@ -9,7 +9,8 @@ import java.time.LocalDateTime;
 import java.util.Set;
 
 @Entity
-@Data
+@Getter
+@Setter
 @Table(name = "orders")
 public class Order {
     @Id
@@ -25,7 +26,7 @@ public class Order {
     private Assignment assignment;
 
     @OneToMany(mappedBy = "order")
-    private Set<OrderDetail> orderDetail;
+    private Set<OrderDetail> orderDetails;
 
     @Column(name = "deliveryaddress")
     private String deliveryAddress;

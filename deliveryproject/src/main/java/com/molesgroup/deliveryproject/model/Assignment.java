@@ -20,7 +20,7 @@ public class Assignment {
     @JoinColumn(name = "assignedby", referencedColumnName = "idadmin")
     private Administrator admin;
 
-    @OneToOne
+    @OneToMany
     @JoinColumn(name = "iddeliverydriver", referencedColumnName = "iddeliverydriver")
     private DeliveryDriver deliveryDriver;
 }
