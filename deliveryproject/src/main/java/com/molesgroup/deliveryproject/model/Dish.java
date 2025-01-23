@@ -8,8 +8,6 @@ import java.util.Set;
 @AttributeOverride(name = "id", column = @Column(name = "iddish"))
 public class Dish extends Product{
 
-    private Float price;
-
     @OneToMany(mappedBy = "dish")
     private Set<OrderDetail> orderDetails;
 

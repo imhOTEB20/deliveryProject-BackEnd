@@ -2,6 +2,7 @@ package com.molesgroup.deliveryproject.model;
 
 import com.molesgroup.deliveryproject.model.enums.PromotionType;
 import jakarta.persistence.*;
+import lombok.Getter;
 
 import java.util.Set;
 
@@ -16,12 +17,14 @@ public class Promotion extends Product{
     @Column(name = "minimumamount")
     private Float minimumAmount;
 
+    @Getter
     @Column(name = "discountpercentage")
     private Float discountPercentage;
 
     @OneToMany(mappedBy = "promotion")
     private Set<OrderDetail> orderDetails;
 
+    @Getter
     @OneToMany(mappedBy = "promotion")
     private Set<Combo> combos;
 }

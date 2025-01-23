@@ -17,4 +17,5 @@ public abstract class Product {
     private String name;
     private String description;
     private Boolean available;
+    private Float price;
 }
