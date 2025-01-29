@@ -18,7 +18,7 @@ public class Assignment {
 
     @OneToOne
     @JoinColumn(name = "assignedby", referencedColumnName = "idadmin")
-    private Administrator admin;
+    private Administrator assignedBy;
 
     @OneToMany
     @JoinColumn(name = "iddeliverydriver", referencedColumnName = "iddeliverydriver")

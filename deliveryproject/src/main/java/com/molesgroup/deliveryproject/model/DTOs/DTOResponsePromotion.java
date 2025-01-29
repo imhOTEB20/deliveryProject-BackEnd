@@ -6,20 +6,22 @@ import java.util.Optional;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public record DTOPromotion(
+public record DTOResponsePromotion(
+        Long product_cod,
         String name,
         String description,
         Optional<Float> price,
         Optional<Float> discount_percentage,
-        Optional<List<DTOCombo>> promoted_products
+        Optional<List<DTOResponseCombo>> promoted_products
 ) implements DTOIProduct{
-    public DTOPromotion(Promotion promotion) {
+    public DTOResponsePromotion(Promotion promotion) {
         this(
+                promotion.getId(),
                 promotion.getName(),
                 promotion.getDescription(),
                 Optional.ofNullable(promotion.getPrice()),
                 Optional.ofNullable(promotion.getDiscountPercentage()),
-                Optional.of(promotion.getCombos().stream().map(DTOCombo::new).collect(Collectors.toList()))
+                Optional.of(promotion.getCombos().stream().map(DTOResponseCombo::new).collect(Collectors.toList()))
         );
     }
 }

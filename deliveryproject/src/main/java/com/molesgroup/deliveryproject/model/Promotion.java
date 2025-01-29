@@ -3,6 +3,7 @@ package com.molesgroup.deliveryproject.model;
 import com.molesgroup.deliveryproject.model.enums.PromotionType;
 import jakarta.persistence.*;
 import lombok.Getter;
+import lombok.Setter;
 
 import java.util.Set;
 
@@ -11,13 +12,18 @@ import java.util.Set;
 @AttributeOverride(name = "id", column = @Column(name = "idpromotion"))
 public class Promotion extends Product{
 
+    @Setter
+    @Getter
     @Enumerated(EnumType.STRING)
     private PromotionType type;
 
+    @Getter
+    @Setter
     @Column(name = "minimumamount")
     private Float minimumAmount;
 
     @Getter
+    @Setter
     @Column(name = "discountpercentage")
     private Float discountPercentage;
 
@@ -25,6 +31,7 @@ public class Promotion extends Product{
     private Set<OrderDetail> orderDetails;
 
     @Getter
-    @OneToMany(mappedBy = "promotion")
+    @Setter
+    @OneToMany(mappedBy = "promotion", cascade = CascadeType.ALL, orphanRemoval = true)
     private Set<Combo> combos;
 }

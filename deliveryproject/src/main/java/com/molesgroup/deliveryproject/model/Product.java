@@ -18,4 +18,8 @@ public abstract class Product {
     private String description;
     private Boolean available;
     private Float price;
+
+    public void toggleAvailability() {
+        this.setAvailable(!this.getAvailable());
+    }
 }

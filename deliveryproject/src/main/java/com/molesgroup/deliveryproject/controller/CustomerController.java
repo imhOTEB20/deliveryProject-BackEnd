@@ -4,7 +4,4 @@ import org.springframework.beans.factory.annotation.Autowired;
 
 public class CustomerController {
 
-    @Autowired
-    private CustomerService customerService;
-
 }

@@ -2,16 +2,20 @@ package com.molesgroup.deliveryproject.model.DTOs;
 
 import com.molesgroup.deliveryproject.model.Dish;
 
-public record DTODish (
+public record DTOResponseDish(
+        Long product_cod,
         String name,
         String description,
-        Float price
+        Float price,
+        Boolean available
 ) implements DTOIProduct {
-    public DTODish (Dish dish) {
+    public DTOResponseDish(Dish dish) {
         this(
+                dish.getId(),
                 dish.getName(),
                 dish.getDescription(),
-                dish.getPrice()
+                dish.getPrice(),
+                dish.getAvailable()
         );
     }
 }

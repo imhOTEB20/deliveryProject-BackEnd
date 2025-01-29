@@ -9,8 +9,7 @@ import java.time.LocalDateTime;
 import java.util.Set;
 
 @Entity
-@Getter
-@Setter
+@Data
 @Table(name = "orders")
 public class Order {
     @Id
@@ -18,14 +17,14 @@ public class Order {
     @Column(name = "idorder")
     private Long id;
 
-    @OneToOne(cascade = CascadeType.ALL)
+    @ManyToOne
     @JoinColumn(name = "idcustomer", referencedColumnName = "idcustomer")
     private Customer customer;
 
     @OneToOne(mappedBy = "order")
     private Assignment assignment;
 
-    @OneToMany(mappedBy = "order")
+    @OneToMany(mappedBy = "order", cascade = CascadeType.ALL)
     private Set<OrderDetail> orderDetails;
 
     @Column(name = "deliveryaddress")
