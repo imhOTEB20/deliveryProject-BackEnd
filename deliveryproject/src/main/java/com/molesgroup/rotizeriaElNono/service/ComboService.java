@@ -1,7 +1,7 @@
 package com.molesgroup.rotizeriaElNono.service;
 
 import com.molesgroup.rotizeriaElNono.model.Combo;
-import com.molesgroup.rotizeriaElNono.model.DTOs.DTOComboForUpdatePromotion;
+import com.molesgroup.rotizeriaElNono.DTOs.DTOComboForUpdatePromotion;
 import com.molesgroup.rotizeriaElNono.model.Promotion;
 import com.molesgroup.rotizeriaElNono.repository.ComboRepository;
 import com.molesgroup.rotizeriaElNono.repository.DishRepository;

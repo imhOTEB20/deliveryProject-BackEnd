@@ -1,8 +1,8 @@
 package com.molesgroup.rotizeriaElNono.service;
 
-import com.molesgroup.rotizeriaElNono.model.DTOs.DTOPostDish;
-import com.molesgroup.rotizeriaElNono.model.DTOs.DTOResponseDish;
-import com.molesgroup.rotizeriaElNono.model.DTOs.DTOUpdateDish;
+import com.molesgroup.rotizeriaElNono.DTOs.DTOPostDish;
+import com.molesgroup.rotizeriaElNono.DTOs.DTOResponseDish;
+import com.molesgroup.rotizeriaElNono.DTOs.DTOUpdateDish;
 import com.molesgroup.rotizeriaElNono.model.Dish;
 import com.molesgroup.rotizeriaElNono.repository.DishRepository;
 import com.molesgroup.rotizeriaElNono.exception.ResourceNotFoundException;

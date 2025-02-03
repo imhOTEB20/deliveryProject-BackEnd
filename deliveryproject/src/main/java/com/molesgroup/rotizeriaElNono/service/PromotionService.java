@@ -1,7 +1,9 @@
 package com.molesgroup.rotizeriaElNono.service;
 
+import com.molesgroup.rotizeriaElNono.DTOs.DTOPostPromotion;
+import com.molesgroup.rotizeriaElNono.DTOs.DTOResponsePromotion;
+import com.molesgroup.rotizeriaElNono.DTOs.DTOUpdatePromotion;
 import com.molesgroup.rotizeriaElNono.model.Combo;
-import com.molesgroup.rotizeriaElNono.model.DTOs.*;
 import com.molesgroup.rotizeriaElNono.model.Promotion;
 import com.molesgroup.rotizeriaElNono.model.enums.PromotionType;
 import com.molesgroup.rotizeriaElNono.repository.ComboRepository;
@@ -12,7 +14,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import java.util.List;
 import java.util.Optional;
 import java.util.Set;
 import java.util.stream.Collectors;

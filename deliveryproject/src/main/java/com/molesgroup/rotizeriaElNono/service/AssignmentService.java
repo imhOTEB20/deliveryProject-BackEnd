@@ -1,6 +1,6 @@
 package com.molesgroup.rotizeriaElNono.service;
 
-import com.molesgroup.rotizeriaElNono.model.DTOs.DTOResponseAssignment;
+import com.molesgroup.rotizeriaElNono.DTOs.DTOResponseAssignment;
 import com.molesgroup.rotizeriaElNono.model.DeliveryDriver;
 import com.molesgroup.rotizeriaElNono.model.Order;
 import com.molesgroup.rotizeriaElNono.model.enums.StatusOrder;

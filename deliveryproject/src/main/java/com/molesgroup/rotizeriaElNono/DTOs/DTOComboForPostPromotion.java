@@ -1,4 +1,4 @@
-package com.molesgroup.rotizeriaElNono.model.DTOs;
+package com.molesgroup.rotizeriaElNono.DTOs;
 
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;

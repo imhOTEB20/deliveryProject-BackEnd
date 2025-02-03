@@ -1,8 +1,8 @@
 package com.molesgroup.rotizeriaElNono.service;
 
-import com.molesgroup.rotizeriaElNono.model.DTOs.DTOResponseDish;
-import com.molesgroup.rotizeriaElNono.model.DTOs.DTOResponseProducts;
-import com.molesgroup.rotizeriaElNono.model.DTOs.DTOResponsePromotion;
+import com.molesgroup.rotizeriaElNono.DTOs.DTOResponseDish;
+import com.molesgroup.rotizeriaElNono.DTOs.DTOResponseProducts;
+import com.molesgroup.rotizeriaElNono.DTOs.DTOResponsePromotion;
 import com.molesgroup.rotizeriaElNono.model.Product;
 import com.molesgroup.rotizeriaElNono.model.enums.ProductType;
 import com.molesgroup.rotizeriaElNono.repository.DishRepository;

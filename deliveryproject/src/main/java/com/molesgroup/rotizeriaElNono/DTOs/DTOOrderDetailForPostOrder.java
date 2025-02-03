@@ -1,11 +1,11 @@
-package com.molesgroup.rotizeriaElNono.model.DTOs;
+package com.molesgroup.rotizeriaElNono.DTOs;
 
 import jakarta.validation.constraints.NotNull;
 
 public record DTOOrderDetailForPostOrder(
         @NotNull
         Integer quantity,
-        String details,
+        String detail,
 
         DTOProductDetails product
 ) {

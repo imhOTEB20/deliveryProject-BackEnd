@@ -1,7 +1,7 @@
 package com.molesgroup.rotizeriaElNono.controller;
 
-import com.molesgroup.rotizeriaElNono.model.DTOs.DTOResponseCustomer;
-import com.molesgroup.rotizeriaElNono.model.DTOs.DTORegisterCustomer;
+import com.molesgroup.rotizeriaElNono.DTOs.DTOResponseCustomer;
+import com.molesgroup.rotizeriaElNono.DTOs.DTORegisterCustomer;
 import com.molesgroup.rotizeriaElNono.service.CustomerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;

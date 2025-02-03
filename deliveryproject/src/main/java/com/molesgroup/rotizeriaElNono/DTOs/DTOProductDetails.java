@@ -1,4 +1,4 @@
-package com.molesgroup.rotizeriaElNono.model.DTOs;
+package com.molesgroup.rotizeriaElNono.DTOs;
 
 import com.molesgroup.rotizeriaElNono.model.enums.ProductType;
 import jakarta.validation.constraints.NotBlank;

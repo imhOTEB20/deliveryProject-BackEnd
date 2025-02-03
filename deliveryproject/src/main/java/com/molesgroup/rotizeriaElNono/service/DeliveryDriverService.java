@@ -1,9 +1,9 @@
 package com.molesgroup.rotizeriaElNono.service;
 
 import com.molesgroup.rotizeriaElNono.exception.ResourceNotFoundException;
-import com.molesgroup.rotizeriaElNono.model.DTOs.DTOResponseClient;
-import com.molesgroup.rotizeriaElNono.model.DTOs.DTOResponseDeliveryDriver;
-import com.molesgroup.rotizeriaElNono.model.DTOs.DTOUpdateProfile;
+import com.molesgroup.rotizeriaElNono.DTOs.DTOResponseClient;
+import com.molesgroup.rotizeriaElNono.DTOs.DTOResponseDeliveryDriver;
+import com.molesgroup.rotizeriaElNono.DTOs.DTOUpdateProfile;
 import com.molesgroup.rotizeriaElNono.model.User;
 import com.molesgroup.rotizeriaElNono.repository.DeliveryDriverRepository;
 import org.springframework.beans.factory.annotation.Autowired;

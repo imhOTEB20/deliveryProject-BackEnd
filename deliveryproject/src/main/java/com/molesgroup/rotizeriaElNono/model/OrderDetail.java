@@ -11,15 +11,15 @@ public class OrderDetail {
     private Long id;
 
     @ManyToOne
-    @JoinColumn(name = "order")
+    @JoinColumn(name = "id_order")
     private Order order;
 
     @ManyToOne
-    @JoinColumn(name = "dish")
+    @JoinColumn(name = "id_dish")
     private Dish dish;
 
     @ManyToOne
-    @JoinColumn(name = "promotion")
+    @JoinColumn(name = "id_promotion")
     private Promotion promotion;
 
     private Integer quantity;

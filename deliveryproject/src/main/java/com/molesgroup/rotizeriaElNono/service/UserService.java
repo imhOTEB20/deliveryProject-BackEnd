@@ -1,6 +1,6 @@
 package com.molesgroup.rotizeriaElNono.service;
 
-import com.molesgroup.rotizeriaElNono.model.DTOs.DTORegisterCustomer;
+import com.molesgroup.rotizeriaElNono.DTOs.DTORegisterCustomer;
 import com.molesgroup.rotizeriaElNono.model.User;
 import com.molesgroup.rotizeriaElNono.model.enums.UserType;
 import com.molesgroup.rotizeriaElNono.repository.UserRepository;

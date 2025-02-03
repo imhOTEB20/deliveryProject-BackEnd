@@ -1,6 +1,6 @@
 package com.molesgroup.rotizeriaElNono.service;
 
-import com.molesgroup.rotizeriaElNono.model.DTOs.DTOOrderDetailForPostOrder;
+import com.molesgroup.rotizeriaElNono.DTOs.DTOOrderDetailForPostOrder;
 import com.molesgroup.rotizeriaElNono.model.Dish;
 import com.molesgroup.rotizeriaElNono.model.Order;
 import com.molesgroup.rotizeriaElNono.model.OrderDetail;
@@ -45,7 +45,7 @@ public class OrderDetailService {
                             dtoOrderDetailForPostOrder.product().id()
                     );
                     orderDetail.setQuantity(dtoOrderDetailForPostOrder.quantity());
-                    orderDetail.setDetails(dtoOrderDetailForPostOrder.details());
+                    orderDetail.setDetails(dtoOrderDetailForPostOrder.detail());
 
                     orderDetail.setOrder(order);
                     return orderDetail;

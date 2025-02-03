@@ -1,4 +1,4 @@
-package com.molesgroup.rotizeriaElNono.model.DTOs;
+package com.molesgroup.rotizeriaElNono.DTOs;
 
 import com.molesgroup.rotizeriaElNono.model.Order;
 import com.molesgroup.rotizeriaElNono.model.enums.PaymentMethod;
@@ -22,12 +22,12 @@ public record DTOResponseOrder(
         this(
                 order.getId(),
                 order.getCustomer().getId(),
-                order.getAssignment().getId(),
+                (order.getAssignment() != null) ? order.getAssignment().getId() : null,
                 order.getOrderDetails().stream().map(DTOOrderDetail::new).collect(Collectors.toList()),
                 order.getDeliveryAddress(),
                 order.getPaymentMethod(),
                 order.getStatus(),
-                order.getOrderDate()
+                LocalDateTime.now()
         );
     }
 }

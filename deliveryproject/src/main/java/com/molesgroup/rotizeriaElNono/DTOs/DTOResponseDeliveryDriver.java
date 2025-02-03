@@ -1,4 +1,4 @@
-package com.molesgroup.rotizeriaElNono.model.DTOs;
+package com.molesgroup.rotizeriaElNono.DTOs;
 
 import com.molesgroup.rotizeriaElNono.model.DeliveryDriver;
 import com.molesgroup.rotizeriaElNono.model.User;

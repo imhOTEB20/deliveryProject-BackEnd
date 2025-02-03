@@ -1,9 +1,8 @@
 package com.molesgroup.rotizeriaElNono.service;
 
 import com.molesgroup.rotizeriaElNono.model.Customer;
-import com.molesgroup.rotizeriaElNono.model.DTOs.DTOPostOrder;
-import com.molesgroup.rotizeriaElNono.model.DTOs.DTOResponseOrder;
-import com.molesgroup.rotizeriaElNono.model.Order;
+import com.molesgroup.rotizeriaElNono.DTOs.DTOPostOrder;
+import com.molesgroup.rotizeriaElNono.DTOs.DTOResponseOrder;
 import com.molesgroup.rotizeriaElNono.model.OrderDetail;
 import com.molesgroup.rotizeriaElNono.model.User;
 import com.molesgroup.rotizeriaElNono.model.enums.StatusOrder;
@@ -16,7 +15,6 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
-import java.util.Optional;
 import java.util.Set;
 import java.util.stream.Collectors;
 
@@ -88,6 +86,7 @@ public class OrderService {
 
         order.setCustomer(customer);
         order.setOrderDetails(orderDetailSet);
+
 
         return new DTOResponseOrder(orderRepository.save(order));
     }

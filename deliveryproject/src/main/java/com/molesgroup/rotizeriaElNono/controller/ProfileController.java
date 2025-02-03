@@ -1,14 +1,13 @@
 package com.molesgroup.rotizeriaElNono.controller;
 
 import com.molesgroup.rotizeriaElNono.exception.UserTypeNotSupportedException;
-import com.molesgroup.rotizeriaElNono.model.DTOs.DTOResponseClient;
-import com.molesgroup.rotizeriaElNono.model.DTOs.DTOUpdateProfile;
+import com.molesgroup.rotizeriaElNono.DTOs.DTOResponseClient;
+import com.molesgroup.rotizeriaElNono.DTOs.DTOUpdateProfile;
 import com.molesgroup.rotizeriaElNono.service.AdministratorService;
 import com.molesgroup.rotizeriaElNono.service.CustomerService;
 import com.molesgroup.rotizeriaElNono.service.DeliveryDriverService;
 import com.molesgroup.rotizeriaElNono.service.UserService;
 import org.springframework.web.bind.annotation.*;
-import com.molesgroup.rotizeriaElNono.model.User;
 
 @RestController
 @RequestMapping("/profile")

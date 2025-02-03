@@ -1,6 +1,6 @@
 package com.molesgroup.rotizeriaElNono.controller;
 
-import com.molesgroup.rotizeriaElNono.model.DTOs.DTOResponseProducts;
+import com.molesgroup.rotizeriaElNono.DTOs.DTOResponseProducts;
 import com.molesgroup.rotizeriaElNono.service.DishService;
 import com.molesgroup.rotizeriaElNono.service.ProductService;
 import com.molesgroup.rotizeriaElNono.service.PromotionService;
